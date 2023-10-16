@@ -1,3 +1,4 @@
+"use strict";
 // let doyi = 
 // {name : "doyi" ,
 // hello: function() {

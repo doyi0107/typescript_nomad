@@ -1,21 +1,32 @@
+"use strict";
 // readonly
-var peoplean = function (name) { return ({ name: name }); };
-var c = peoplean("sss");
+const peoplean = (name) => ({ name });
+const c = peoplean("sss");
 c.age;
 c.name;
 // tuple
-var children = ["yoon", 23, true];
+const children = ["yoon", 23, true];
 children[0] = "hi";
 // any
-var v = [1, 2, 3, 4, 5];
-var e = true;
+const v = [1, 2, 3, 4, 5];
+const e = true;
 v + e;
 // unknown
-var d;
-var f = d + 1;
+let d;
+let f = d + 1;
 if (typeof d === 'number') {
-    var f_1 = d + 1;
+    let f = d + 1;
 }
 function hello() {
     console.log(xx);
+}
+// never
+function bye(name) {
+    if (typeof name === "string") {
+    }
+    else if (typeof name === "number") {
+    }
+    else {
+        name;
+    }
 }

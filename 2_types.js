@@ -1,15 +1,16 @@
-var doyi = {
+"use strict";
+const doyi = {
     name: "doyi",
     age: 23
 };
 function playerdong(name) {
     return {
-        name: name
+        name
     };
 }
-var a = playerdong("dong");
+const a = playerdong("dong");
 console.log(a);
 a.age;
-var playerdan = function (name) { return ({ name: name }); };
-var b = playerdan("sss");
+const playerdan = (name) => ({ name });
+const b = playerdan("sss");
 b.age;
